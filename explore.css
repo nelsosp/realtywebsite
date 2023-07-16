@@ -19,8 +19,10 @@
     font-family: 'Poppins', sans-serif;
 }
 
-/* Needs Work to fix rowings */
-.homes-container {
+/* Fix detail section */
+ .homes-container {
+    top: -200px;
+    background-color: #111;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -28,24 +30,29 @@
     z-index: 3;
 } 
 .home {
-    flex: 0 0 calc(33.33% - 20px);
+    flex: 0 0 calc(50% - 20px);
     margin: 10px;
-    text-align: center;
+    text-align: left;
     position: relative;
     z-index: 4;
-
-} 
+    border: 5px solid #ffffff;
+    border-radius: 4px;
+    background-color: #fff;
+}
 .home img {
     width: 100%;
     height: auto;
 
 }
+
 .home h3 {
     margin: 10px 0;
+    color: #644f2e;
 }
-.home p.price {
+
+.home p.details {
     font-weight: bold;
-    color: #e83e8c;
+    color: #644f2e;
 }
 
 .weblogo {
@@ -162,7 +169,7 @@
     top: 0;
     right: 0;
     width: 300px;
-    height: 100%;
+    height: 60%;
     display: flex;
     align-items: center;
     justify-content: center;
