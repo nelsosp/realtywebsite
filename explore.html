@@ -55,8 +55,20 @@
             <p class="specific-v3">Sq.Ft.</p>
             <div class="button-container">
                 <button class="moredetail">More Details</button>
-                <button class="talk-realtor">Talk to Realtor</button>
-              </div>
+                <button class="talk-realtor" onclick="togglePopup()">Talk to Realtor</button>
+            </div>
+            <div class="popup" id="popup-1">
+                <div class="overlay"></div>
+                <div class="content">
+                    <div class="close-btn" onclick="togglePopup()">&times;</div>
+                    <h1>Title</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Rem in fugiat eveniet exercitationem optio numquam suscipit dolor. 
+                        Laborum, tenetur quas.</p>
+                </div>
+            </div>
+
+        
             <!------------------------------------------------------->
             </div>
             <div class="home">
@@ -90,6 +102,9 @@
             </div>
         </div>
     </section>
+
+    <!-- Call to activate popup window when Talk to Realtor is clicked -->
+    <script src="explorepopup.js"></script>
 
 
     <script>

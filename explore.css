@@ -19,7 +19,60 @@
     font-family: 'Poppins', sans-serif;
 }
 
-/* Fix detail section */
+/* Popup window for Talk to Realtor------------------------------------------------------------------- */
+.popup .overlay {
+    position: fixed;
+    top: 0px;
+    left:0px;
+    width:100vw;
+    height:100vh;
+    background:rgba(0,0,0,0.7);
+    z-index:3;
+    display:none;
+}
+
+.popup .content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%) scale(0);
+    background: #fff;
+    width: 450px;
+    height:220px;
+    z-index:4;
+    text-align: center;
+    padding:20px;
+    box-sizing:border-box;
+}
+
+
+.popup .close-btn {
+    position: absolute;
+    cursor: pointer;
+    right: 20px;
+    top:20px;
+    width:30px;
+    height:30px;
+    background:#222;
+    color:#fff;
+    font-size:25px;
+    font-weight:600;
+    line-height:30px;
+    text-align:center;
+    border-radius:50%;
+}
+
+.popup.active .overlay {
+    display:block;
+}
+.popup.active .content {
+    transition:all 300ms ease-in-out;
+    transform: translate(-50%,-50%) scale(1);
+
+}
+/*<--------------------------------------------------------------------->*/
+
+/* Fix detail section---------------------------------------------------*/
  .homes-container {
     top: -200px;
     background-color: #111;
@@ -42,6 +95,7 @@
 .home img {
     width: 100%;
     height: auto;
+    border-radius: 4px;
 
 }
 
@@ -49,8 +103,9 @@
     margin: 10px 0;
     color: #644f2e;
 }
+/* ------------------------------------------------------------------ */
 
-/* Text within the home gallery selections */
+/* Text within the home gallery selections------------------------------ */
 .home p.details {
     font-weight: bold;
     color: #644f2e;
@@ -104,23 +159,33 @@
     top: -194px;
     left: -10px;
 }
+/* ---------------------------------------------------------------- */
 
 /* Buttons within the home gallery section */
 .button-container {
     display: flex;
     justify-content: right;
-    margin-top: -180px;
+    margin-top: -160px;
     margin-right: -25px;
-  }
+}
   
-  .button-container button {
+.button-container button {
     margin: 20px 30px;
     padding: 20px 40px;
-    background-color: grey;
+    background-color: #644f2e;
     cursor: pointer;
     border: 5px solid #000000;
     border-radius: 15px;
-  }
+    color: #fff;
+    font-weight: bold;
+}
+.button-container button:hover {
+    background-color: #3b2f1b;
+    transition: ease-in .2s;
+}
+.button-container button:not(:hover) {
+    transition: ease-out 1s;
+}
 
 .weblogo {
     position: absolute;
