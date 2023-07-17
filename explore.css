@@ -37,7 +37,7 @@
     z-index: 4;
     border: 5px solid #ffffff;
     border-radius: 4px;
-    background-color: #fff;
+    background-color: #ffffff;
 }
 .home img {
     width: 100%;
@@ -50,10 +50,77 @@
     color: #644f2e;
 }
 
+/* Text within the home gallery selections */
 .home p.details {
     font-weight: bold;
     color: #644f2e;
 }
+
+.home p.specific-value1 {
+    font-weight: bold;
+    color: #644f2e;
+    text-align: right;
+    position: relative;
+    top: -100px;
+    left: -165px;
+}
+.home p.specific-v1 {
+    font-weight: bold;
+    color: #644f2e;
+    text-align: right;
+    position: relative;
+    top: -100px;
+    left: -150px;
+}
+.home p.specific-value2 {
+    font-weight: bold;
+    color: #644f2e;
+    text-align: right;
+    position: relative;
+    top: -146.5px;
+    left: -95px;
+}
+.home p.specific-v2 {
+    font-weight: bold;
+    color: #644f2e;
+    text-align: right;
+    position: relative;
+    top: -147.5px;
+    left: -75px;
+}
+.home p.specific-value3 {
+    font-weight: bold;
+    color: #644f2e;
+    text-align: right;
+    position: relative;
+    top: -193px;
+    left: -10px;
+}
+.home p.specific-v3 {
+    font-weight: bold;
+    color: #644f2e;
+    text-align: right;
+    position: relative;
+    top: -194px;
+    left: -10px;
+}
+
+/* Buttons within the home gallery section */
+.button-container {
+    display: flex;
+    justify-content: right;
+    margin-top: -180px;
+    margin-right: -25px;
+  }
+  
+  .button-container button {
+    margin: 20px 30px;
+    padding: 20px 40px;
+    background-color: grey;
+    cursor: pointer;
+    border: 5px solid #000000;
+    border-radius: 15px;
+  }
 
 .weblogo {
     position: absolute;
