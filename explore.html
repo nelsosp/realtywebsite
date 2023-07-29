@@ -54,15 +54,40 @@
             <p class="specific-value3">1,950</p>
             <p class="specific-v3">Sq.Ft.</p>
             <div class="button-container">
-                <button class="moredetail">More Details</button>
-                <button class="talk-realtor" onclick="togglePopup()">Talk to Realtor</button>
+                <button class="moredetail" onclick="toggleDetailPopup()">More Details</button>
+                <button class="talk-realtor" onclick="toggleRealtorPopup()">Talk to Realtor</button>
             </div>
 
+
+            <div class="popup2" id="popup-2">
+                <div class="overlay2"></div>
+                <div class="content2">
+                    <div class="close-btn" onclick="toggleDetailPopup()">&times;</div>
+                    <div class="gallery-wrap">
+                    <img src="images/back.jpg" id="backBtn">
+                    <div class="gallery">
+                        <div>
+                            <span><img src="/images/interior1.jpg" class="popup-image2"></span>                    
+                            <span><img src="/images/interior2.jpg" class="popup-image2"></span>                    
+                            <span><img src="/images/interior3.jpg" class="popup-image2"></span>
+                        </div>
+                        <div>
+                            <span><img src="/images/interior4.jpg" class="popup-image2"></span>                    
+                            <span><img src="/images/interior5.jpg" class="popup-image2"></span>                    
+                            <span><img src="/images/interior6.jpg" class="popup-image2"></span>
+                        </div>
+                    </div>
+                    <img src="images/next.png" id="nextBtn">
+                    </div>
+                    <h1>More Details</h1>
+                    <p>hello there</p>
+                </div>
+            </div>
 
             <div class="popup" id="popup-1">
                 <div class="overlay"></div>
                 <div class="content">
-                    <div class="close-btn" onclick="togglePopup()">&times;</div>
+                    <div class="close-btn" onclick="toggleRealtorPopup()">&times;</div>
                     <h1>Talk to Realtor</h1>
                     <img src="/images/realtor.jpg" class="popup-image1">
                     <p class="popup-text1">Realtor: Vanessa Holmes </p>
@@ -109,6 +134,7 @@
 
     <!-- Call to activate popup window when Talk to Realtor is clicked -->
     <script src="explorepopup.js"></script>
+    <!-- -------------------------------------------------------------- -->
 
 
     <script>
@@ -122,6 +148,28 @@
         })
 
     </script>
+
+
+<!-- -----------------------------------------------------------------------------------click/animation of buttons on more details -->
+    <script>
+
+        let scrollContainer = document.querySelector(".gallery");
+        let backBtn = document.getElementById("backBtn");
+        let nextBtn = document.getElementById("nextBtn");
+
+
+        nextBtn.addEventListener("click", ()=>{
+            scrollContainer.style.scrollBehavior = "smooth";
+            scrollContainer.scrollLeft += 900;
+        });
+
+        backBtn.addEventListener("click", ()=>{
+            scrollContainer.style.scrollBehavior = "smooth";
+            scrollContainer.scrollLeft -= 900;
+        });
+
+</script>
+<!-- --------------------------------------------------------------------------------------------------------------------- -->
     
 
     
