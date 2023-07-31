@@ -56,8 +56,6 @@
     align-items: center;
     justify-content: center;
     margin: 0% auto;
-    border: 5px solid black;
-    border-radius: 5px;
 }
 
 #backBtn, #nextBtn{
@@ -148,6 +146,17 @@
 
 
 /* ........more details popup sections for detailing */
+.popup2 .content2 .moredetails .md {
+    position: relative;
+    top: -15px;
+    font-size: 1.5em;
+}
+
+.popup2 .content2 .moredetails .md1 {
+    color: #644f2e;
+    text-align: left;
+}
+
 .popup2 .overlay2 {
     position: fixed;
     top: 0px;
@@ -220,7 +229,7 @@
 
 /* Fix detail section---------------------------------------------------*/
  .homes-container {
-    top: -200px;
+    top: -100px;
     background-color: #111;
     display: flex;
     flex-wrap: wrap;
@@ -469,6 +478,14 @@
 }
 
 
+
+.footer {
+    position: relative;
+    text-align: center;
+    border: 5px solid #111;
+    top: -80px;
+    background-color: #111;
+}
 
 
 
