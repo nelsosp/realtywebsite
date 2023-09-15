@@ -20,13 +20,6 @@
 }
 
 
- .filter-section .btnfilter {
-    position: relative;
-    cursor: pointer;
-    bottom: -100px;
-    left: -485px;
-}
-
 /* -------------------------------------------------------------------------------------new more detail section */
 .gallery{
     width: 900px;
