@@ -1,2 +1,2 @@
-# realtywebsite
-A home realty website for luxury homes
+# Home Realty Website
+A home realty website mockup for luxury homes
