@@ -5,5 +5,5 @@ A fun personal frontend project relating to a luxury home realty website intende
 [![My Skills](https://skillicons.dev/icons?i=js,html,css)](https://skillicons.dev)
 
 ## How To See It For Yourself (*IMPORTANT, this is not a final product. Only some functionality)
-[CLICK HERE TO VISIT THE WEBSITE](https://nelsosp.github.io/realtywebsite/)
+[CLICK HERE](https://nelsosp.github.io/realtywebsite/)
 
