@@ -1,63 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="index.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
     <script defer src="script.js"></script>
 
-
     <title>Luxury Homes Realty</title>
-</head>
-    <link rel="icon" href="/images/realty.png">
-<body>
-
+  </head>
+  <link rel="icon" href="images/realty.png" />
+  <body>
     <section class="showcase">
-        <header>
-            <i class="fa-solid fa-house-chimney weblogo"></i>
-            <h2 class="logo">LHR</h2>
-            <div class="toggle"></div> 
-        </header>
+      <header>
+        <i class="fa-solid fa-house-chimney weblogo"></i>
+        <h2 class="logo">LHR</h2>
+        <div class="toggle"></div>
+      </header>
 
-        <video src="/videos/home.mp4" muted loop autoplay></video>
+      <video src="videos/home.mp4" muted loop autoplay></video>
 
-        <div class="overlay"></div>
+      <div class="overlay"></div>
 
-        <div class="text">
-            <p>Achieving dedicated services in aiding onlookers to find that perfect home they've always sought out</p>
-            <h2>WE GO ABOVE</h2>
-            <h3>AND BEYOND</h3>
-            <a href="/explore.html">Gallery</a>
-        </div>
-        <ul class="social">
-            <li><a href="#"><img src="images/fb.png" alt=""/></a></li>
-            <li><a href="#"><img src="images/ig.png" alt=""/></a></li>
-            <li><a href="#"><img src="images/tw.png" alt=""/></a></li>
-        </ul>
+      <div class="text">
+        <p>
+          Achieving dedicated services in aiding onlookers to find that perfect
+          home they've always sought out
+        </p>
+        <h2>WE GO ABOVE</h2>
+        <h3>AND BEYOND</h3>
+        <a href="explore.html">Gallery</a>
+      </div>
+      <ul class="social">
+        <li>
+          <a href="#"><img src="images/fb.png" alt="" /></a>
+        </li>
+        <li>
+          <a href="#"><img src="images/ig.png" alt="" /></a>
+        </li>
+        <li>
+          <a href="#"><img src="images/tw.png" alt="" /></a>
+        </li>
+      </ul>
     </section>
 
     <div class="menu">
-        <ul>
-            <li><a href="/index.html">Home</a></li>
-            <li><a href="/explore.html">Gallery</a></li>
-            <li><a href="/destinations.html">About Us</a></li>
-            <li><a href="/contact.html">Contact</a></li>
-        </ul>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="explore.html">Gallery</a></li>
+        <li><a href="about_us.html">About Us</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
     </div>
 
-
     <script>
-        const menuToggle = document.querySelector('.toggle')        
-        const showcase = document.querySelector('.showcase')
+      const menuToggle = document.querySelector(".toggle");
+      const showcase = document.querySelector(".showcase");
 
-        menuToggle.addEventListener('click', function () {
-            menuToggle.classList.toggle('active')            
-            showcase.classList.toggle('active')
-
-        })
-
+      menuToggle.addEventListener("click", function () {
+        menuToggle.classList.toggle("active");
+        showcase.classList.toggle("active");
+      });
     </script>
-</body>
+  </body>
 </html>

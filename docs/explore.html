@@ -1,260 +1,280 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="explore.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="explore.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
 
     <title>Luxury Homes Realty</title>
-</head>
-    <link rel="icon" href="/images/realty.png">
-<body>
-
+  </head>
+  <link rel="icon" href="images/realty.png" />
+  <body>
     <section class="showcase">
-        <header>
-            <i class="fa-solid fa-house-chimney weblogo"></i>
-            <h2 class="logo">LHR</h2>
-            <div class="toggle"></div> 
-        </header>
+      <header>
+        <i class="fa-solid fa-house-chimney weblogo"></i>
+        <h2 class="logo">LHR</h2>
+        <div class="toggle"></div>
+      </header>
 
-        <video src="/videos/explore.mp4" muted loop autoplay></video>
+      <video src="videos/explore.mp4" muted loop autoplay></video>
 
-        <div class="overlay"></div>
+      <div class="overlay"></div>
 
-        <div class="text">
-            <h2>Explore Your Next Destination</h2>
-            <!-- <h3>To Call Home</h3> -->
-            <p>Browse our selection of the best homes in the country</p>
-        </div>
+      <div class="text">
+        <h2>Explore Your Next Destination</h2>
+        <!-- <h3>To Call Home</h3> -->
+        <p>Browse our selection of the best homes in the country</p>
+      </div>
     </section>
 
     <div class="menu">
-        <ul>
-            <li><a href="/index2.html">Home</a></li>
-            <li><a href="/explore.html">Gallery</a></li>
-            <li><a href="/about_us.html">About Us</a></li>
-            <li><a href="/contact.html">Contact</a></li>
-        </ul>
+      <ul>
+        <li><a href="index2.html">Home</a></li>
+        <li><a href="explore.html">Gallery</a></li>
+        <li><a href="about_us.html">About Us</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
     </div>
 
     <!-- Home Selection Section -->
     <section>
-        <div class="homes-container">
-            <div class="home">
-            <img src="images/house1.jpg">
-            <h3>Price: $500,000</h3>
-            <p class="details">5959 Affonso Boulevard</p>
-            <p class="details">Carson City, NV</p>
-            <p class="specific-value1">4</p>
-            <p class="specific-v1">Beds</p>
-            <p class="specific-value2">5</p>
-            <p class="specific-v2">Baths</p>
-            <p class="specific-value3">1,950</p>
-            <p class="specific-v3">Sq.Ft.</p>
-            <div class="button-container">
-                <button class="moredetail" onclick="toggleDetailPopup()">More Details</button>
-                <button class="talk-realtor" onclick="toggleRealtorPopup()">Talk to Realtor</button>
-            </div>
+      <div class="homes-container">
+        <div class="home">
+          <img src="images/house1.jpg" />
+          <h3>Price: $500,000</h3>
+          <p class="details">5959 Affonso Boulevard</p>
+          <p class="details">Carson City, NV</p>
+          <p class="specific-value1">4</p>
+          <p class="specific-v1">Beds</p>
+          <p class="specific-value2">5</p>
+          <p class="specific-v2">Baths</p>
+          <p class="specific-value3">1,950</p>
+          <p class="specific-v3">Sq.Ft.</p>
+          <div class="button-container">
+            <button class="moredetail" onclick="toggleDetailPopup()">
+              More Details
+            </button>
+            <button class="talk-realtor" onclick="toggleRealtorPopup()">
+              Talk to Realtor
+            </button>
+          </div>
 
-
-            <div class="popup2" id="popup-2">
-                <div class="overlay2"></div>
-                <div class="content2">
-                    <div class="close-btn" onclick="toggleDetailPopup()">&times;</div>
-                    <div class="gallery-wrap">
-                    <img src="images/back.jpg" id="backBtn">
-                    <div class="gallery">
-                        <div>
-                            <span><img src="/images/interior1.jpg" class="popup-image2"></span>                    
-                            <span><img src="/images/interior2.jpg" class="popup-image2"></span>                    
-                            <span><img src="/images/interior3.jpg" class="popup-image2"></span>
-                        </div>
-                        <div>
-                            <span><img src="/images/interior4.jpg" class="popup-image2"></span>                    
-                            <span><img src="/images/interior5.jpg" class="popup-image2"></span>                    
-                            <span><img src="/images/interior6.jpg" class="popup-image2"></span>
-                        </div>
-                    </div>
-                    <img src="images/next.png" id="nextBtn">
-                    </div>
-                    <div class="moredetails">
-                        <h1 class="md">More Details</h1>
-                        <p class="md1">-Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam dolore expedita corrupti nulla cupiditate natus doloremque quos atque, eligendi et?</p>
-                        <p class="md1">-Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio obcaecati, in vero blanditiis odio magnam?</p>
-                        <p class="md1">-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi nobis similique voluptate atque numquam cum reiciendis? Deleniti!</p>
-                        <p class="md1">-Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur, dolorum!</p>
-                        <p class="md1">-Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
-                        <p class="md1">-Lorem ipsum dolor sit amet.</p>
-                    </div>
+          <div class="popup2" id="popup-2">
+            <div class="overlay2"></div>
+            <div class="content2">
+              <div class="close-btn" onclick="toggleDetailPopup()">&times;</div>
+              <div class="gallery-wrap">
+                <img src="images/back.jpg" id="backBtn" />
+                <div class="gallery">
+                  <div>
+                    <span
+                      ><img src="images/interior1.jpg" class="popup-image2"
+                    /></span>
+                    <span
+                      ><img src="images/interior2.jpg" class="popup-image2"
+                    /></span>
+                    <span
+                      ><img src="images/interior3.jpg" class="popup-image2"
+                    /></span>
+                  </div>
+                  <div>
+                    <span
+                      ><img src="images/interior4.jpg" class="popup-image2"
+                    /></span>
+                    <span
+                      ><img src="images/interior5.jpg" class="popup-image2"
+                    /></span>
+                    <span
+                      ><img src="images/interior6.jpg" class="popup-image2"
+                    /></span>
+                  </div>
                 </div>
+                <img src="images/next.png" id="nextBtn" />
+              </div>
+              <div class="moredetails">
+                <h1 class="md">More Details</h1>
+                <p class="md1">
+                  -Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Totam dolore expedita corrupti nulla cupiditate natus
+                  doloremque quos atque, eligendi et?
+                </p>
+                <p class="md1">
+                  -Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Distinctio obcaecati, in vero blanditiis odio magnam?
+                </p>
+                <p class="md1">
+                  -Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Nisi nobis similique voluptate atque numquam cum reiciendis?
+                  Deleniti!
+                </p>
+                <p class="md1">
+                  -Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Pariatur, dolorum!
+                </p>
+                <p class="md1">
+                  -Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                </p>
+                <p class="md1">-Lorem ipsum dolor sit amet.</p>
+              </div>
             </div>
+          </div>
 
-            <div class="popup" id="popup-1">
-                <div class="overlay"></div>
-                <div class="content">
-                    <div class="close-btn" onclick="toggleRealtorPopup()">&times;</div>
-                    <h1>Talk to Realtor</h1>
-                    <img src="/images/realtor.jpg" class="popup-image1">
-                    <p class="popup-text1">Realtor: Vanessa Holmes </p>
-                    <p class="popup-text1">Work Number: (775)-241-7586</p>
-                    <p class="popup-text1">Company Number: (255)-511-6789</p>
-                    <p class="popup-text1">Email: holmesv@lhr.com</p>
-                </div>
+          <div class="popup" id="popup-1">
+            <div class="overlay"></div>
+            <div class="content">
+              <div class="close-btn" onclick="toggleRealtorPopup()">
+                &times;
+              </div>
+              <h1>Talk to Realtor</h1>
+              <img src="images/realtor.jpg" class="popup-image1" />
+              <p class="popup-text1">Realtor: Vanessa Holmes</p>
+              <p class="popup-text1">Work Number: (775)-241-7586</p>
+              <p class="popup-text1">Company Number: (255)-511-6789</p>
+              <p class="popup-text1">Email: holmesv@lhr.com</p>
             </div>
-            </div>
-
-        
-            <!------------------------------------------------------->
-
-            <div class="home">
-            <img src="images/house3.jpg">
-            <h3>Price: $750,000</h3>
-            <p class="details">1234 Brick Road</p>
-            <p class="details">Grand Rapids, MI</p>
-            <p class="specific-value1">3</p>
-            <p class="specific-v1">Beds</p>
-            <p class="specific-value2">3</p>
-            <p class="specific-v2">Baths</p>
-            <p class="specific-value3">1,700</p>
-            <p class="specific-v3">Sq.Ft.</p>
-            <div class="button-container">
-                <button class="moredetail">More Details</button>
-                <button class="talk-realtor">Talk to Realtor</button>
-            </div>
-            </div>
-            <!------------------------------------------------------->
-
-            <div class="home">
-            <img src="images/house2.jpg">
-            <h3>Price: $2,100,000</h3>
-            <p class="details">8902 Beachway Blvd</p>
-            <p class="details">Los Angeles, CA</p>
-            <p class="specific-value1">6</p>
-            <p class="specific-v1">Beds</p>
-            <p class="specific-value2">7</p>
-            <p class="specific-v2">Baths</p>
-            <p class="specific-value3">2,350</p>
-            <p class="specific-v3">Sq.Ft.</p>
-            <div class="button-container">
-                <button class="moredetail">More Details</button>
-                <button class="talk-realtor">Talk to Realtor</button>
-            </div>
-            </div>
-
-            <!------------------------------------------------------->
-            
-            <div class="home">
-            <img src="images/house4.jpg">
-            <h3>Price: $1,550,000</h3>
-            <p class="details">1967 Sandy Road</p>
-            <p class="details">St. Joseph, MI</p>
-            <p class="specific-value1">4</p>
-            <p class="specific-v1">Beds</p>
-            <p class="specific-value2">5</p>
-            <p class="specific-v2">Baths</p>
-            <p class="specific-value3">2,700</p>
-            <p class="specific-v3">Sq.Ft.</p>
-            <div class="button-container">
-                <button class="moredetail">More Details</button>
-                <button class="talk-realtor">Talk to Realtor</button>
-            </div>
-            </div>
-
-            <!------------------------------------------------------->
-            <div class="home">
-                <img src="images/house5.jpg">
-                <h3>Price: $15,600,000</h3>
-                <p class="details">999 Royal Oaks Road</p>
-                <p class="details">Findley, NY</p>
-                <p class="specific-value1">15</p>
-                <p class="specific-v1">Beds</p>
-                <p class="specific-value2">20</p>
-                <p class="specific-v2">Baths</p>
-                <p class="specific-value3">7,800</p>
-                <p class="specific-v3">Sq.Ft.</p>
-                <div class="button-container">
-                    <button class="moredetail">More Details</button>
-                    <button class="talk-realtor">Talk to Realtor</button>
-                </div>
-                </div>
-            <!------------------------------------------------------->
-            <div class="home">
-                <img src="images/house6.jpg">
-                <h3>Price: $950,000</h3>
-                <p class="details">2158 Country Ave</p>
-                <p class="details">Dallas, TX</p>
-                <p class="specific-value1">6</p>
-                <p class="specific-v1">Beds</p>
-                <p class="specific-value2">8</p>
-                <p class="specific-v2">Baths</p>
-                <p class="specific-value3">3,100</p>
-                <p class="specific-v3">Sq.Ft.</p>
-                <div class="button-container">
-                    <button class="moredetail">More Details</button>
-                    <button class="talk-realtor">Talk to Realtor</button>
-                </div>
-                </div>
-
+          </div>
         </div>
+
+        <!------------------------------------------------------->
+
+        <div class="home">
+          <img src="images/house3.jpg" />
+          <h3>Price: $750,000</h3>
+          <p class="details">1234 Brick Road</p>
+          <p class="details">Grand Rapids, MI</p>
+          <p class="specific-value1">3</p>
+          <p class="specific-v1">Beds</p>
+          <p class="specific-value2">3</p>
+          <p class="specific-v2">Baths</p>
+          <p class="specific-value3">1,700</p>
+          <p class="specific-v3">Sq.Ft.</p>
+          <div class="button-container">
+            <button class="moredetail">More Details</button>
+            <button class="talk-realtor">Talk to Realtor</button>
+          </div>
+        </div>
+        <!------------------------------------------------------->
+
+        <div class="home">
+          <img src="images/house2.jpg" />
+          <h3>Price: $2,100,000</h3>
+          <p class="details">8902 Beachway Blvd</p>
+          <p class="details">Los Angeles, CA</p>
+          <p class="specific-value1">6</p>
+          <p class="specific-v1">Beds</p>
+          <p class="specific-value2">7</p>
+          <p class="specific-v2">Baths</p>
+          <p class="specific-value3">2,350</p>
+          <p class="specific-v3">Sq.Ft.</p>
+          <div class="button-container">
+            <button class="moredetail">More Details</button>
+            <button class="talk-realtor">Talk to Realtor</button>
+          </div>
+        </div>
+
+        <!------------------------------------------------------->
+
+        <div class="home">
+          <img src="images/house4.jpg" />
+          <h3>Price: $1,550,000</h3>
+          <p class="details">1967 Sandy Road</p>
+          <p class="details">St. Joseph, MI</p>
+          <p class="specific-value1">4</p>
+          <p class="specific-v1">Beds</p>
+          <p class="specific-value2">5</p>
+          <p class="specific-v2">Baths</p>
+          <p class="specific-value3">2,700</p>
+          <p class="specific-v3">Sq.Ft.</p>
+          <div class="button-container">
+            <button class="moredetail">More Details</button>
+            <button class="talk-realtor">Talk to Realtor</button>
+          </div>
+        </div>
+
+        <!------------------------------------------------------->
+        <div class="home">
+          <img src="images/house5.jpg" />
+          <h3>Price: $15,600,000</h3>
+          <p class="details">999 Royal Oaks Road</p>
+          <p class="details">Findley, NY</p>
+          <p class="specific-value1">15</p>
+          <p class="specific-v1">Beds</p>
+          <p class="specific-value2">20</p>
+          <p class="specific-v2">Baths</p>
+          <p class="specific-value3">7,800</p>
+          <p class="specific-v3">Sq.Ft.</p>
+          <div class="button-container">
+            <button class="moredetail">More Details</button>
+            <button class="talk-realtor">Talk to Realtor</button>
+          </div>
+        </div>
+        <!------------------------------------------------------->
+        <div class="home">
+          <img src="images/house6.jpg" />
+          <h3>Price: $950,000</h3>
+          <p class="details">2158 Country Ave</p>
+          <p class="details">Dallas, TX</p>
+          <p class="specific-value1">6</p>
+          <p class="specific-v1">Beds</p>
+          <p class="specific-value2">8</p>
+          <p class="specific-v2">Baths</p>
+          <p class="specific-value3">3,100</p>
+          <p class="specific-v3">Sq.Ft.</p>
+          <div class="button-container">
+            <button class="moredetail">More Details</button>
+            <button class="talk-realtor">Talk to Realtor</button>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- Call to activate popup window when Talk to Realtor is clicked -->
     <script src="explorepopup.js"></script>
     <!-- -------------------------------------------------------------- -->
 
-
     <script>
-        const menuToggle = document.querySelector('.toggle')        
-        const showcase = document.querySelector('.showcase')
+      const menuToggle = document.querySelector(".toggle");
+      const showcase = document.querySelector(".showcase");
 
-        menuToggle.addEventListener('click', function () {
-            menuToggle.classList.toggle('active')            
-            showcase.classList.toggle('active')
-
-        })
-
+      menuToggle.addEventListener("click", function () {
+        menuToggle.classList.toggle("active");
+        showcase.classList.toggle("active");
+      });
     </script>
 
-
-<!-- -----------------------------------------------------------------------------------click/animation of buttons on more details -->
+    <!-- -----------------------------------------------------------------------------------click/animation of buttons on more details -->
     <script>
+      let scrollContainer = document.querySelector(".gallery");
+      let backBtn = document.getElementById("backBtn");
+      let nextBtn = document.getElementById("nextBtn");
 
-        let scrollContainer = document.querySelector(".gallery");
-        let backBtn = document.getElementById("backBtn");
-        let nextBtn = document.getElementById("nextBtn");
+      nextBtn.addEventListener("click", () => {
+        scrollContainer.style.scrollBehavior = "smooth";
+        scrollContainer.scrollLeft += 900;
+      });
 
-
-        nextBtn.addEventListener("click", ()=>{
-            scrollContainer.style.scrollBehavior = "smooth";
-            scrollContainer.scrollLeft += 900;
-        });
-
-        backBtn.addEventListener("click", ()=>{
-            scrollContainer.style.scrollBehavior = "smooth";
-            scrollContainer.scrollLeft -= 900;
-        });
-
+      backBtn.addEventListener("click", () => {
+        scrollContainer.style.scrollBehavior = "smooth";
+        scrollContainer.scrollLeft -= 900;
+      });
     </script>
-<!-- --------------------------------------------------------------------------------------------------------------------- -->
-    
+    <!-- --------------------------------------------------------------------------------------------------------------------- -->
 
-    
+    <!--Make a body for housing selections  -->
 
-<!--Make a body for housing selections  -->
-
-
-
-
-
-<!-- Make a footer -->
+    <!-- Make a footer -->
     <footer class="footer">
-        <button class="btn-footer">Next Page</button>
-        <div class="text-footer">
-            <p>2023 Luxury Homes Realty. All rights reserved.</p>
-        </div>
+      <button class="btn-footer">Next Page</button>
+      <div class="text-footer">
+        <p>2023 Luxury Homes Realty. All rights reserved.</p>
+      </div>
     </footer>
-
-</body>
+  </body>
 </html>
