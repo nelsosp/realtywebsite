@@ -72,8 +72,6 @@
   position: fixed;
   top: 0px;
   left: 0px;
-  width: 100vw;
-  height: 100vh;
   background: rgba(0, 0, 0, 0.7);
   z-index: 3;
   display: none;
@@ -81,26 +79,30 @@
 
 .popup .content {
   position: absolute;
+  justify-content: center;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(0);
   background: #fff;
-  width: 450px;
-  height: 220px;
+  width: 90%;
+  border-radius: 10px;
+  height: 50%;
   z-index: 4;
   text-align: center;
   padding: 20px;
   box-sizing: border-box;
 }
 
+.realtor-header {
+  position: relative;
+  left: 15%;
+  top: 12%;
+}
+
 .popup p.popup-text1 {
   position: relative;
-  color: #111;
-  width: 75%;
-  left: 29%;
+  left: 15%;
   top: 10%;
-  text-align: left;
-  text-decoration: bold;
 }
 
 .popup .close-btn {
