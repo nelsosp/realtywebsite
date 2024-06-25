@@ -5,9 +5,5 @@ A fun personal frontend project relating to a luxury home realty website intende
 [![My Skills](https://skillicons.dev/icons?i=js,html,css)](https://skillicons.dev)
 
 ## How To See It For Yourself (*IMPORTANT, this is not a final product. Only some functionality)
-Since this project is currently not hosted onto a server, in order to view this for yourself:
-1. Download Live Server within your personal IDE
-2. Github clone; this repository into your IDE
-3. Finally, simply open with Live Server on index.html which will bring you to the landing page.
-4. Navigate!
+[CLICK HERE](https://nelsosp.github.io/realtywebsite/)
 
